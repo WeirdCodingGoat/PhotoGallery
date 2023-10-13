@@ -1,0 +1,19 @@
+Display
+
+<Display>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Some chaotic images here"
+        Image:
+            id: image
+            source: root.display_image()
+            size_hint: 1, 6
+        BoxLayout:
+            Button:
+                text: "<<<"
+                background_color: "black"
+                on_press: rood.advance_image()
+            Button:
+                text: ">>>"
+                background_color: "black"
